@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "mocha -R spec 'tests/app'",
+    "test": "mocha -R spec -w 'tests/app'",
     "lint": "eslint --quiet tests/app app",
     "lint-warn": "eslint tests/app app"
   },
@@ -32,6 +32,8 @@
   },
   "private": true,
   "devDependencies": {
-    "eslint": "^2.8.0"
+    "eslint": "^2.8.0",
+    "live-server": "^1.0.0",
+    "mocha-phantomjs": "^4.1.0"
   }
 }

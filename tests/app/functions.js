@@ -41,6 +41,9 @@ describe('functions', function() {
 
   it('you should be able to use closures', function () {
     var arr = [ Math.random(), Math.random(), Math.random(), Math.random() ];
+    // var arr = [ Math.random(), Math.random(), Math.random()];
+    // var arr = [ Math.random(), Math.random() ];
+    // var arr = [ Math.random() ];
     var square = function (x) { return x * x; };
 
     var funcs = functionsAnswers.makeClosures(arr, square);
